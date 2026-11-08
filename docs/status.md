@@ -6,6 +6,12 @@ Software validation: 52 checks passed with Ruff clean. All 52 also passed from a
 
 Real model smoke test: Qwen3 4B on CPU returned a correct cited KYC answer, rejected an out-of-scope cooking request, and refused an unknown circular reference. The supported answer took 237.7 seconds; the refusals took about 2.57 seconds and 0.001 seconds. An earlier answer-case timeout is preserved in the original smoke results. This is three synthetic cases, not the official 120-question benchmark. A scripted-model unit test validates control flow, not LLM behavior.
 
-Remaining before calling the original six-week research project complete: acquire and inspect 60–80 official documents; write and independently verify 120 official-source questions; calibrate retrieval and refusal on dev; freeze test; run 4B/8B baselines and final evaluations; run D0–D5 red-team comparisons and benign cost checks; optionally calibrate a judge; test notebooks in Colab; create and publish the GitHub repository and Pages; record the walkthrough; publish a results-based write-up. These are empirical and account-dependent steps, not numbers that can be filled in by implementation.
+Remaining before calling the original six-week research project complete: acquire and inspect 60–80 official documents; write and independently verify 120 official-source questions; calibrate retrieval and refusal on dev; freeze test; run 4B/8B baselines and final evaluations; run D0–D5 red-team comparisons and benign cost checks; optionally calibrate a judge; test notebooks in Colab; record the walkthrough; publish a results-based write-up. These are empirical and account-dependent steps, not numbers that can be filled in by implementation.
 
-No external GitHub repository, public dashboard, social post, or video has been created. The project code and local dashboard are ready for that workflow once the missing evidence and accounts are available.
+Published repository: https://github.com/surya-8143/rbi-sebi-agent
+
+GitHub Pages: https://surya-8143.github.io/rbi-sebi-agent/
+
+The first Linux GitHub Actions run passed: https://github.com/surya-8143/rbi-sebi-agent/actions/runs/42437070248
+
+No social post or video has been created. The published engineering write-up explains the implemented system and missing evidence without inventing benchmark findings.

@@ -2,6 +2,12 @@
 
 A local LangGraph agent that retrieves circular passages, uses bounded tools, and returns source-checked answers or explicit refusals. Includes evaluation, red-team experiments, traces, Colab notebooks, and a static results dashboard.
 
+[Live dashboard](https://surya-8143.github.io/rbi-sebi-agent/) · [GitHub repository](https://github.com/surya-8143/rbi-sebi-agent) · [CI runs](https://github.com/surya-8143/rbi-sebi-agent/actions)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/surya-8143/rbi-sebi-agent/blob/14c82024743dce7e7ec605040a43f94c3ba743fe/notebooks/20_demo.ipynb)
+
+The notebook is available; execution in an actual Colab runtime remains unverified. Upload the project ZIP produced by `python -m scripts.package` when its setup cell asks for source.
+
 **Status:** implemented software with a fictional demonstration corpus. This is not yet a validated RBI/SEBI benchmark. No official PDFs or human-verified question labels were supplied. `evals/questions.jsonl` and the official manifest are deliberately empty. See [delivery status](docs/status.md) for what has and has not been run.
 
 Open [the dashboard](docs/index.html) locally. It reads committed measurements, labels fictional runs, shows 95% intervals, and does not invent missing results.
