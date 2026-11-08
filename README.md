@@ -12,7 +12,7 @@ The notebook is available; execution in an actual Colab runtime remains unverifi
 
 Open [the dashboard](docs/index.html) locally. It reads committed measurements, labels fictional runs, shows 95% intervals, and does not invent missing results.
 
-Verified locally: **52 software tests passed**; a separate extracted source archive also passed all 52. On 20 fictional retrieval questions, BM25 recall@5 was 19/20 and dense/fusion/reranked retrieval each reached 20/20. A three-case Qwen3 4B CPU smoke test produced one correct cited answer and two correct refusals; the answer took about 238 seconds. The earlier timed-out run is retained. These tiny synthetic experiments are not official benchmarks.
+Verified locally: **55 software tests passed**; a separate extracted source archive also passed all 55. On 20 fictional retrieval questions, BM25 recall@5 was 19/20 and dense/fusion/reranked retrieval each reached 20/20. A three-case Qwen3 4B CPU smoke test produced one correct cited answer and two correct refusals; the answer took about 238 seconds. The earlier timed-out run is retained. These tiny synthetic experiments are not official benchmarks.
 
 ## Quick start
 
@@ -32,7 +32,7 @@ PowerShell model configuration:
 
 ```powershell
 $env:LLM_MODEL = 'qwen3:4b'
-$env:LLM_TIMEOUT = '180'
+$env:LLM_TIMEOUT = '300'
 ```
 
 The default endpoint is local Ollama at `http://127.0.0.1:11434/v1`. No paid API, tunnel, hosted inference, or API key is required. `.env.example` documents settings; `.env` is not automatically loaded.

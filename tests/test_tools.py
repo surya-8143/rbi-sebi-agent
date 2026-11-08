@@ -2,6 +2,7 @@ import json
 
 import pytest
 
+from src.agent.config import Config
 from src.agent.tools import ToolSet, calculate
 
 
@@ -39,3 +40,9 @@ def test_section_metadata_and_no_global_state(searcher):
     result, _ = tools.run("get_section", '{"doc_id":"fra_kyc","section":"1"}')
     assert result[0]["doc_id"] == "fra_kyc"
     assert result[0]["page"] == 1
+
+
+@pytest.mark.parametrize("kwargs", [{"tau": float("nan")}, {"timeout": 0}, {"max_tool_calls": 100}])
+def test_invalid_runtime_limits(kwargs):
+    with pytest.raises(ValueError):
+        Config(**kwargs)

@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 class Config:
     model: str = "qwen3:4b"
     base_url: str = "http://127.0.0.1:11434/v1"
-    timeout: float = 120
+    timeout: float = 300
     max_steps: int = 5
     max_tool_calls: int = 12
     defense: int = 5
@@ -31,7 +31,7 @@ class Config:
     def from_env(cls, **overrides):
         values = {"model": os.getenv("LLM_MODEL", "qwen3:4b"),
                   "base_url": os.getenv("LLM_BASE_URL", "http://127.0.0.1:11434/v1"),
-                  "timeout": float(os.getenv("LLM_TIMEOUT", "120"))}
+                  "timeout": float(os.getenv("LLM_TIMEOUT", "300"))}
         if os.getenv("RETRIEVAL_TAU"):
             values["tau"] = float(os.environ["RETRIEVAL_TAU"])
         return cls(**(values | overrides))

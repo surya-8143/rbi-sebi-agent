@@ -2,7 +2,7 @@
 
 Implemented: PDF ingestion and manifest validation; section/page chunking; BM25, optional FAISS/BGE dense retrieval and reranking; explicit LangGraph with four tools; exact citation checks; scope and reference refusals; versioned prompts; request-local evidence; bounded calculator; defense levels; JSON and SQLite traces; resumable evaluation and red-team runners; confidence intervals; regression gate; 40 attacks; five poisoned documents; fictional corpus; static dashboard; setup script; CI; three Colab notebooks; documentation.
 
-Software validation: 52 checks passed with Ruff clean. All 52 also passed from a separately extracted source archive using the installed dependencies. BM25 retrieved gold evidence in 19/20 fictional questions; dense, hybrid, and hybrid with reranking each retrieved 20/20. Reranking reduced MRR on these fixtures and added latency, so it remains optional.
+Software validation: 55 checks passed with Ruff clean. All 55 also passed from a separately extracted source archive using the installed dependencies. BM25 retrieved gold evidence in 19/20 fictional questions; dense, hybrid, and hybrid with reranking each retrieved 20/20. Reranking reduced MRR on these fixtures and added latency, so it remains optional.
 
 Real model smoke test: Qwen3 4B on CPU returned a correct cited KYC answer, rejected an out-of-scope cooking request, and refused an unknown circular reference. The supported answer took 237.7 seconds; the refusals took about 2.57 seconds and 0.001 seconds. An earlier answer-case timeout is preserved in the original smoke results. This is three synthetic cases, not the official 120-question benchmark. A scripted-model unit test validates control flow, not LLM behavior.
 
