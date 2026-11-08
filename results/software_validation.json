@@ -1,0 +1,10 @@
+{
+  "kind": "validation",
+  "date": "2026-11-08T02:02:25.729859+00:00",
+  "environment": "Windows / Python 3.11.9",
+  "summary": "52 software checks passed; 0 failed; 0 skipped. Ruff passed.",
+  "tests": 52,
+  "failed": 0,
+  "skipped": 0,
+  "scope": "Offline software tests; scripted model control flow, not LLM accuracy"
+}

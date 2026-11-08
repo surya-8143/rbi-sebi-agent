@@ -1,0 +1,11 @@
+# Delivery status
+
+Implemented: PDF ingestion and manifest validation; section/page chunking; BM25, optional FAISS/BGE dense retrieval and reranking; explicit LangGraph with four tools; exact citation checks; scope and reference refusals; versioned prompts; request-local evidence; bounded calculator; defense levels; JSON and SQLite traces; resumable evaluation and red-team runners; confidence intervals; regression gate; 40 attacks; five poisoned documents; fictional corpus; static dashboard; setup script; CI; three Colab notebooks; documentation.
+
+Software validation: 52 checks passed with Ruff clean. All 52 also passed from a separately extracted source archive using the installed dependencies. BM25 retrieved gold evidence in 19/20 fictional questions; dense, hybrid, and hybrid with reranking each retrieved 20/20. Reranking reduced MRR on these fixtures and added latency, so it remains optional.
+
+Real model smoke test: Qwen3 4B on CPU returned a correct cited KYC answer, rejected an out-of-scope cooking request, and refused an unknown circular reference. The supported answer took 237.7 seconds; the refusals took about 2.57 seconds and 0.001 seconds. An earlier answer-case timeout is preserved in the original smoke results. This is three synthetic cases, not the official 120-question benchmark. A scripted-model unit test validates control flow, not LLM behavior.
+
+Remaining before calling the original six-week research project complete: acquire and inspect 60–80 official documents; write and independently verify 120 official-source questions; calibrate retrieval and refusal on dev; freeze test; run 4B/8B baselines and final evaluations; run D0–D5 red-team comparisons and benign cost checks; optionally calibrate a judge; test notebooks in Colab; create and publish the GitHub repository and Pages; record the walkthrough; publish a results-based write-up. These are empirical and account-dependent steps, not numbers that can be filled in by implementation.
+
+No external GitHub repository, public dashboard, social post, or video has been created. The project code and local dashboard are ready for that workflow once the missing evidence and accounts are available.

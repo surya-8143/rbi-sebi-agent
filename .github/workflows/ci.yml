@@ -1,0 +1,18 @@
+name: tests-and-recorded-results
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements-ci.txt
+      - run: ruff check .
+      - run: pytest -q
+      - run: python -m scripts.check_results --allow-missing
+      - run: python -m src.retrieval.index --chunks tests/fixtures/chunks.jsonl
+      - run: python -m evals.retrieval_eval --questions tests/fixtures/questions.jsonl --fixture --out results/fixture_retrieval.json
+      - run: python -m scripts.build_dashboard

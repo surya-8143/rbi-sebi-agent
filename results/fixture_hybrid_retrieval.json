@@ -1,0 +1,538 @@
+{
+  "kind": "retrieval",
+  "meta": {
+    "fixture": true,
+    "split": "dev",
+    "corpus_hash": "dd6829a66a6e77f394c07dae78e7d1478294e348d299c82b119081e981749650"
+  },
+  "setups": {
+    "bm25": {
+      "n": 20,
+      "recall@1": 0.4,
+      "recall@3": 0.8,
+      "recall@5": 0.95,
+      "recall@10": 1.0,
+      "mrr": 0.635,
+      "all_gold_at_5": 0.95,
+      "median_seconds": 0.0004596500002662651,
+      "rows": [
+        {
+          "id": "fixture_01_1",
+          "rank": 3,
+          "seconds": 0.000808000004326459,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_01_2",
+          "rank": 5,
+          "seconds": 0.0005171000011614524,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_02_1",
+          "rank": 1,
+          "seconds": 0.0004609000025084242,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_02_2",
+          "rank": 4,
+          "seconds": 0.0004771000021719374,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_03_1",
+          "rank": 1,
+          "seconds": 0.0004428000029292889,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_03_2",
+          "rank": 6,
+          "seconds": 0.0004968000066583045,
+          "all_gold_at_5": false
+        },
+        {
+          "id": "fixture_04_1",
+          "rank": 1,
+          "seconds": 0.00044549999438459054,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_04_2",
+          "rank": 2,
+          "seconds": 0.0004589000018313527,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_05_1",
+          "rank": 2,
+          "seconds": 0.00046039999870117754,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_05_2",
+          "rank": 1,
+          "seconds": 0.00043709999590646476,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_06_1",
+          "rank": 2,
+          "seconds": 0.00048009999591158703,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_06_2",
+          "rank": 2,
+          "seconds": 0.0004393999988678843,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_07_1",
+          "rank": 1,
+          "seconds": 0.00045429999590851367,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_07_2",
+          "rank": 1,
+          "seconds": 0.0004374000054667704,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_08_1",
+          "rank": 1,
+          "seconds": 0.0004274000020814128,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_08_2",
+          "rank": 4,
+          "seconds": 0.0004541000016615726,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_09_1",
+          "rank": 2,
+          "seconds": 0.0004800000024260953,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_09_2",
+          "rank": 1,
+          "seconds": 0.00042329999996582046,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_10_1",
+          "rank": 2,
+          "seconds": 0.0004951000009896234,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_10_2",
+          "rank": 2,
+          "seconds": 0.0004741000011563301,
+          "all_gold_at_5": true
+        }
+      ]
+    },
+    "dense": {
+      "n": 20,
+      "recall@1": 0.6,
+      "recall@3": 0.95,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.7766666666666666,
+      "all_gold_at_5": 1.0,
+      "median_seconds": 0.054924349999055266,
+      "rows": [
+        {
+          "id": "fixture_01_1",
+          "rank": 3,
+          "seconds": 0.15056819999881554,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_01_2",
+          "rank": 2,
+          "seconds": 0.04732289999810746,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_02_1",
+          "rank": 1,
+          "seconds": 0.06881320000684354,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_02_2",
+          "rank": 2,
+          "seconds": 0.08995419999700971,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_03_1",
+          "rank": 1,
+          "seconds": 0.11919009999837726,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_03_2",
+          "rank": 1,
+          "seconds": 0.08307010000135051,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_04_1",
+          "rank": 1,
+          "seconds": 0.07927309999649879,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_04_2",
+          "rank": 1,
+          "seconds": 0.0658910999991349,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_05_1",
+          "rank": 2,
+          "seconds": 0.09161719999974594,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_05_2",
+          "rank": 1,
+          "seconds": 0.05106169999635313,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_06_1",
+          "rank": 1,
+          "seconds": 0.049757400003727525,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_06_2",
+          "rank": 2,
+          "seconds": 0.045345399994403124,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_07_1",
+          "rank": 2,
+          "seconds": 0.0476007999968715,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_07_2",
+          "rank": 1,
+          "seconds": 0.05093050000141375,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_08_1",
+          "rank": 1,
+          "seconds": 0.05691809999552788,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_08_2",
+          "rank": 2,
+          "seconds": 0.05119689999992261,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_09_1",
+          "rank": 1,
+          "seconds": 0.05373049999616342,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_09_2",
+          "rank": 1,
+          "seconds": 0.053968299995176494,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_10_1",
+          "rank": 5,
+          "seconds": 0.05588040000293404,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_10_2",
+          "rank": 1,
+          "seconds": 0.05284859999665059,
+          "all_gold_at_5": true
+        }
+      ]
+    },
+    "hybrid": {
+      "n": 20,
+      "recall@1": 0.55,
+      "recall@3": 0.95,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.7458333333333333,
+      "all_gold_at_5": 1.0,
+      "median_seconds": 0.061906000002636574,
+      "rows": [
+        {
+          "id": "fixture_01_1",
+          "rank": 2,
+          "seconds": 0.058238300000084564,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_01_2",
+          "rank": 2,
+          "seconds": 0.11981250000098953,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_02_1",
+          "rank": 1,
+          "seconds": 0.06941440000082366,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_02_2",
+          "rank": 2,
+          "seconds": 0.05110639999475097,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_03_1",
+          "rank": 1,
+          "seconds": 0.05887860000075307,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_03_2",
+          "rank": 3,
+          "seconds": 0.052951300000131596,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_04_1",
+          "rank": 1,
+          "seconds": 0.05363280000165105,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_04_2",
+          "rank": 2,
+          "seconds": 0.05101020000438439,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_05_1",
+          "rank": 3,
+          "seconds": 0.06493340000452008,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_05_2",
+          "rank": 1,
+          "seconds": 0.0581808999995701,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_06_1",
+          "rank": 1,
+          "seconds": 0.05584169999929145,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_06_2",
+          "rank": 2,
+          "seconds": 0.05359780000435421,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_07_1",
+          "rank": 1,
+          "seconds": 0.05332040000212146,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_07_2",
+          "rank": 1,
+          "seconds": 0.22476250000181608,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_08_1",
+          "rank": 1,
+          "seconds": 0.28720619999512564,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_08_2",
+          "rank": 2,
+          "seconds": 0.1266031000050134,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_09_1",
+          "rank": 1,
+          "seconds": 0.3731698999981745,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_09_2",
+          "rank": 1,
+          "seconds": 0.20255419999739388,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_10_1",
+          "rank": 4,
+          "seconds": 0.26144619999831775,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_10_2",
+          "rank": 1,
+          "seconds": 0.10593620000145165,
+          "all_gold_at_5": true
+        }
+      ]
+    },
+    "hybrid_reranked": {
+      "n": 20,
+      "recall@1": 0.35,
+      "recall@3": 0.95,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.6375,
+      "all_gold_at_5": 1.0,
+      "median_seconds": 2.838206300002639,
+      "rows": [
+        {
+          "id": "fixture_01_1",
+          "rank": 2,
+          "seconds": 3.072574899997562,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_01_2",
+          "rank": 1,
+          "seconds": 3.021699600001739,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_02_1",
+          "rank": 3,
+          "seconds": 3.4816190999990795,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_02_2",
+          "rank": 2,
+          "seconds": 3.155666000006022,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_03_1",
+          "rank": 1,
+          "seconds": 2.586716300000262,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_03_2",
+          "rank": 2,
+          "seconds": 2.650531500003126,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_04_1",
+          "rank": 1,
+          "seconds": 2.82767280000553,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_04_2",
+          "rank": 2,
+          "seconds": 2.635452400005306,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_05_1",
+          "rank": 1,
+          "seconds": 2.6338143999964814,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_05_2",
+          "rank": 2,
+          "seconds": 3.3791734000042197,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_06_1",
+          "rank": 2,
+          "seconds": 2.8198562999969,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_06_2",
+          "rank": 4,
+          "seconds": 2.5233280999964336,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_07_1",
+          "rank": 1,
+          "seconds": 2.7924494999970193,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_07_2",
+          "rank": 2,
+          "seconds": 3.0030122000025585,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_08_1",
+          "rank": 1,
+          "seconds": 2.980584499993711,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_08_2",
+          "rank": 2,
+          "seconds": 2.3823220999984187,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_09_1",
+          "rank": 3,
+          "seconds": 2.827188199997181,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_09_2",
+          "rank": 1,
+          "seconds": 2.8487397999997484,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_10_1",
+          "rank": 3,
+          "seconds": 4.047105900004681,
+          "all_gold_at_5": true
+        },
+        {
+          "id": "fixture_10_2",
+          "rank": 2,
+          "seconds": 3.5242236999984016,
+          "all_gold_at_5": true
+        }
+      ]
+    }
+  }
+}

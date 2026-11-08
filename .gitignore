@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.env
+data/raw/
+data/processed/
+index/
+index_attack/
+runs/
+*.partial.jsonl
+*.egg-info/
+project-plan.txt
+.cache/
+dist/

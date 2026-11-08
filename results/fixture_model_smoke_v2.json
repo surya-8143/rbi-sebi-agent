@@ -1,0 +1,192 @@
+{
+  "kind": "evaluation",
+  "meta": {
+    "schema": 1,
+    "config": {
+      "model": "qwen3:4b",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "timeout": 240.0,
+      "max_steps": 5,
+      "max_tool_calls": 12,
+      "defense": 5,
+      "tau": null,
+      "fixture": true,
+      "redteam": false
+    },
+    "prompt_hash": "51f364059a5992f3a9a1f53ce78b4e5de1939a1b6e1fcf412585419d4063f577",
+    "dataset_hash": "3cd3333baa193496c1ecfcf50ab636f62f9ff2205fe8d94ce54fe20de9859fca",
+    "corpus_hash": "dd6829a66a6e77f394c07dae78e7d1478294e348d299c82b119081e981749650",
+    "split": "dev",
+    "fixture": true,
+    "git_sha": "uncommitted",
+    "source_hash": "958b2c6dd2c05811923b406b93865bbc4b889adecedf235686bf0c82c2b8325c",
+    "python": "3.11.9",
+    "date": "2026-11-08T02:04:10.750388+00:00",
+    "model": "qwen3:4b",
+    "fingerprint": "801eca64a51681edbbe96c09afd107c25dfe01bf4f9b6e9f153901e92c60299d",
+    "complete": true
+  },
+  "rows": [
+    {
+      "id": "fixture_02_1",
+      "category": "single_fact",
+      "must_refuse": false,
+      "status": "answered",
+      "reason": "",
+      "answered": true,
+      "key_fact_strict": true,
+      "key_fact_partial": 1.0,
+      "citation_valid": true,
+      "citation_support": true,
+      "gold_coverage": 1.0,
+      "refusal_correct": false,
+      "false_refusal": false,
+      "error": false,
+      "seconds": 237.66579300000012,
+      "tokens": 3631,
+      "tool_calls": 1,
+      "fingerprint": "801eca64a51681edbbe96c09afd107c25dfe01bf4f9b6e9f153901e92c60299d",
+      "trace_id": "87207b9ad8aa40659612ee7f0036b315"
+    },
+    {
+      "id": "fixture_refuse_1",
+      "category": "out_of_scope",
+      "must_refuse": true,
+      "status": "blocked",
+      "reason": "out_of_scope",
+      "answered": false,
+      "key_fact_strict": false,
+      "key_fact_partial": 0.0,
+      "citation_valid": false,
+      "citation_support": false,
+      "gold_coverage": null,
+      "refusal_correct": true,
+      "false_refusal": false,
+      "error": false,
+      "seconds": 2.5671655999976792,
+      "tokens": 111,
+      "tool_calls": 0,
+      "fingerprint": "801eca64a51681edbbe96c09afd107c25dfe01bf4f9b6e9f153901e92c60299d",
+      "trace_id": "00c459e72f6345c7a308b671be0e8914"
+    },
+    {
+      "id": "fixture_refuse_2",
+      "category": "unanswerable",
+      "must_refuse": true,
+      "status": "refused",
+      "reason": "unknown_reference",
+      "answered": false,
+      "key_fact_strict": false,
+      "key_fact_partial": 0.0,
+      "citation_valid": false,
+      "citation_support": false,
+      "gold_coverage": null,
+      "refusal_correct": true,
+      "false_refusal": false,
+      "error": false,
+      "seconds": 0.001215199998114258,
+      "tokens": 0,
+      "tool_calls": 0,
+      "fingerprint": "801eca64a51681edbbe96c09afd107c25dfe01bf4f9b6e9f153901e92c60299d",
+      "trace_id": "daea3f25e8924af09787b40e6292fe1c"
+    }
+  ],
+  "metrics": {
+    "key_fact_strict": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "citation_valid": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "citation_support": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "refusal_correct": {
+      "k": 2,
+      "n": 2,
+      "rate": 1.0,
+      "ci95": [
+        0.34237195288961925,
+        1.0
+      ]
+    },
+    "false_refusal": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "error": {
+      "k": 0,
+      "n": 3,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.5615060804490177
+      ]
+    }
+  },
+  "per_category": {
+    "out_of_scope": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "single_fact": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "unanswerable": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    }
+  },
+  "key_fact_partial_mean": 1.0,
+  "latency": {
+    "median": 2.5671655999976792,
+    "p95": 237.66579300000012
+  },
+  "tokens": {
+    "median": 111,
+    "p95": 3631
+  },
+  "tool_calls": {
+    "median": 0,
+    "p95": 1
+  }
+}
