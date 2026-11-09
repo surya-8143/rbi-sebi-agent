@@ -24,9 +24,12 @@ def main():
         print(f"{state['status'].upper()} {state.get('reason', '')}\n{state['answer']['answer']}")
         for c in state["answer"]["citations"]:
             source = state["seen"][c["chunk_id"]]
-            print(f"  [{c['chunk_id']}] p.{source['page']}: {c['quote']}")
+            locator = f"p.{source['page']}" if source["page"] is not None else f"web section {source['section_path']}"
+            print(f"  [{c['chunk_id']}] {locator}: {c['quote']}")
         for source in state["answer"].get("sources", []):
             print(f"  {source['issuer']} | {source['title']} | {source['date_issued']}")
+            if source.get("version_date") and source["version_date"] != source["date_issued"]:
+                print(f"  Revision: {source['version_date']}")
         print(state["answer"].get("notice", ""))
         print(f"{state['seconds']:.1f}s | {state['tokens']} tokens | trace {trace}")
         if state["status"] == "error":

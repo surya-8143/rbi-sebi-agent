@@ -10,9 +10,13 @@ def check(new, base, tolerance=.03):
     for field in ("dataset_hash", "corpus_hash", "split", "fixture"):
         if new["meta"][field] != base["meta"][field]:
             raise ValueError(f"Incomparable result field: {field}")
+    if new["meta"].get("label_status") != base["meta"].get("label_status"):
+        raise ValueError("Label review tiers differ")
     if {r["id"] for r in new["rows"]} != {r["id"] for r in base["rows"]}:
         raise ValueError("Evaluation IDs differ")
     for result in (new, base):
+        if result["meta"].get("exploratory") or result["meta"].get("label_status") == "draft":
+            raise ValueError("Draft-label results cannot pass a benchmark regression gate")
         if not result["meta"].get("complete") or len({r["id"] for r in result["rows"]}) != len(result["rows"]):
             raise ValueError("Incomplete or duplicate results")
         recomputed = aggregate(result["rows"])

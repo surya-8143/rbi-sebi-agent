@@ -11,7 +11,7 @@ def build(results=None, out=None):
     runs = []
     for path in sorted(results.glob("*.json")):
         item = json.loads(path.read_text(encoding="utf-8"))
-        if item.get("kind") in {"evaluation", "retrieval", "redteam", "validation"}:
+        if item.get("kind") in {"evaluation", "retrieval", "redteam", "validation", "corpus"}:
             runs.append({"file": path.name, **item})
     data = json.dumps(runs, ensure_ascii=False).replace("<", "\\u003c")
     template = (ROOT / "docs/dashboard.template.html").read_text(encoding="utf-8")

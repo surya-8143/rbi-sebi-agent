@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 
 from src.io import write_json, write_jsonl
 from src.retrieval.chunk import chunk_doc
+from src.retrieval.html import parse_html
 from src.retrieval.parse import parse_pdf
 
 
@@ -32,15 +33,17 @@ def ingest(manifest="data/manifest.csv", raw="data/raw", out="data/processed"):
         if url.scheme != "https" or not (url.hostname == domain or (url.hostname or "").endswith("." + domain)):
             raise ValueError("Source must be an official HTTPS URL")
         path = (root / row["filename"]).resolve()
-        if not path.is_relative_to(root) or path.suffix.lower() != ".pdf":
-            raise ValueError("PDF path escapes data/raw")
+        source_format = row.get("source_format") or "pdf"
+        expected_suffix = ".html" if source_format == "html" else ".pdf"
+        if source_format not in {"html", "pdf"} or not path.is_relative_to(root) or path.suffix.lower() != expected_suffix:
+            raise ValueError("Invalid source format or path escapes data/raw")
         sha = hashlib.sha256(path.read_bytes()).hexdigest()
         if row.get("sha256") and row["sha256"] != sha:
             raise ValueError(f"Source hash mismatch for {doc_id}")
-        pages = parse_pdf(path)
-        row.update(sha256=sha, pages=str(len(pages)))
+        pages = parse_html(path) if source_format == "html" else parse_pdf(path)
+        row.update(sha256=sha, pages=str(0 if source_format == "html" else len(pages)))
         doc_chunks = chunk_doc(row, pages)
-        documents.append({"doc_id": doc_id, "pages": len(pages), "chunks": len(doc_chunks),
+        documents.append({"doc_id": doc_id, "source_format": source_format, "pages": int(row["pages"]), "chunks": len(doc_chunks),
                           "mean_characters_per_page": statistics.mean(len(p["text"]) for p in pages),
                           "review_needed": any(len(p["text"]) < 100 for p in pages)})
         all_pages.append((doc_id, pages))

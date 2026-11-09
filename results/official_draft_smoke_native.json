@@ -1,0 +1,195 @@
+{
+  "kind": "evaluation",
+  "meta": {
+    "schema": 1,
+    "config": {
+      "model": "qwen3:4b",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "timeout": 300.0,
+      "max_steps": 5,
+      "max_tool_calls": 12,
+      "defense": 5,
+      "tau": null,
+      "fixture": false,
+      "redteam": false,
+      "protocol": "native"
+    },
+    "prompt_hash": "0143306db573c48632a650835dad1e4394e78237c5a24153dfb07157cdac6cdd",
+    "dataset_hash": "6904faed8f3ea5533e4be4781bf98ef3b0d6ec9af5931d4bbb91b1f67e19c54d",
+    "corpus_hash": "1a1ea73681194aeb4ad5fc6c9567bfbd7a388ba17a780710c0c276102a1bb9cc",
+    "split": "dev",
+    "fixture": false,
+    "exploratory": true,
+    "label_status": "draft",
+    "git_sha": "8c7d90c6c8b7b6db9b20b76e004c790979146771",
+    "source_hash": "ee0c2393a34405140a2dd460adb5a393d0dcaffef9e62da43c3e7d96ea407f16",
+    "python": "3.11.9",
+    "date": "2026-11-08T12:56:08.440164+00:00",
+    "model": "qwen3:4b",
+    "fingerprint": "adc173abfbf6560787e1ac8b74e43a6c2a546a87bab02d104568e4a774f9b83d",
+    "complete": true
+  },
+  "rows": [
+    {
+      "id": "draft_001",
+      "category": "single_fact",
+      "must_refuse": false,
+      "status": "error",
+      "reason": "RuntimeError",
+      "answered": false,
+      "key_fact_strict": false,
+      "key_fact_partial": 0.0,
+      "citation_valid": false,
+      "citation_support": false,
+      "gold_coverage": 0.0,
+      "refusal_correct": false,
+      "false_refusal": false,
+      "error": true,
+      "seconds": 260.2517239000008,
+      "tokens": 2733,
+      "tool_calls": 1,
+      "fingerprint": "adc173abfbf6560787e1ac8b74e43a6c2a546a87bab02d104568e4a774f9b83d",
+      "trace_id": "575f1107fed04353a9c2955799cc9fd4"
+    },
+    {
+      "id": "draft_034",
+      "category": "unanswerable",
+      "must_refuse": true,
+      "status": "refused",
+      "reason": "unknown_reference",
+      "answered": false,
+      "key_fact_strict": false,
+      "key_fact_partial": 0.0,
+      "citation_valid": false,
+      "citation_support": false,
+      "gold_coverage": null,
+      "refusal_correct": true,
+      "false_refusal": false,
+      "error": false,
+      "seconds": 0.003104700008407235,
+      "tokens": 0,
+      "tool_calls": 0,
+      "fingerprint": "adc173abfbf6560787e1ac8b74e43a6c2a546a87bab02d104568e4a774f9b83d",
+      "trace_id": "a3cc571dd1dc4d31be19be56e18001f9"
+    },
+    {
+      "id": "draft_037",
+      "category": "out_of_scope",
+      "must_refuse": true,
+      "status": "blocked",
+      "reason": "out_of_scope",
+      "answered": false,
+      "key_fact_strict": false,
+      "key_fact_partial": 0.0,
+      "citation_valid": false,
+      "citation_support": false,
+      "gold_coverage": null,
+      "refusal_correct": true,
+      "false_refusal": false,
+      "error": false,
+      "seconds": 6.823809699999401,
+      "tokens": 96,
+      "tool_calls": 0,
+      "fingerprint": "adc173abfbf6560787e1ac8b74e43a6c2a546a87bab02d104568e4a774f9b83d",
+      "trace_id": "e4e9573ef92b4031a2c808ff9339abaf"
+    }
+  ],
+  "metrics": {
+    "key_fact_strict": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "citation_valid": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "ci95": [
+        null,
+        null
+      ]
+    },
+    "citation_support": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "refusal_correct": {
+      "k": 2,
+      "n": 2,
+      "rate": 1.0,
+      "ci95": [
+        0.34237195288961925,
+        1.0
+      ]
+    },
+    "false_refusal": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "error": {
+      "k": 1,
+      "n": 3,
+      "rate": 0.3333333333333333,
+      "ci95": [
+        0.0614903152761605,
+        0.7923450448735121
+      ]
+    }
+  },
+  "per_category": {
+    "out_of_scope": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "single_fact": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "unanswerable": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    }
+  },
+  "key_fact_partial_mean": 0.0,
+  "latency": {
+    "median": 6.823809699999401,
+    "p95": 260.2517239000008
+  },
+  "tokens": {
+    "median": 96,
+    "p95": 2733
+  },
+  "tool_calls": {
+    "median": 0,
+    "p95": 1
+  }
+}

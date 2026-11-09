@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 
 @dataclass(frozen=True)
 class Config:
-    model: str = "qwen3:4b"
+    model: str = "rbi-sebi-qwen3:4b"
     base_url: str = "http://127.0.0.1:11434/v1"
     timeout: float = 300
     max_steps: int = 5
@@ -15,6 +15,7 @@ class Config:
     tau: float | None = None
     fixture: bool = False
     redteam: bool = False
+    protocol: str = "native"
 
     def __post_init__(self):
         url = urlparse(self.base_url)
@@ -26,12 +27,15 @@ class Config:
             raise ValueError("Tool budget or request timeout is outside permitted limits")
         if self.tau is not None and not math.isfinite(self.tau):
             raise ValueError("Retrieval threshold must be finite")
+        if self.protocol not in {"native", "openai"}:
+            raise ValueError("Unknown Ollama protocol")
 
     @classmethod
     def from_env(cls, **overrides):
-        values = {"model": os.getenv("LLM_MODEL", "qwen3:4b"),
+        values = {"model": os.getenv("LLM_MODEL", "rbi-sebi-qwen3:4b"),
                   "base_url": os.getenv("LLM_BASE_URL", "http://127.0.0.1:11434/v1"),
-                  "timeout": float(os.getenv("LLM_TIMEOUT", "300"))}
+                  "timeout": float(os.getenv("LLM_TIMEOUT", "300")),
+                  "protocol": os.getenv("LLM_PROTOCOL", "native")}
         if os.getenv("RETRIEVAL_TAU"):
             values["tau"] = float(os.environ["RETRIEVAL_TAU"])
         return cls(**(values | overrides))

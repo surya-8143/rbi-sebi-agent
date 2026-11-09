@@ -16,16 +16,24 @@ from src.retrieval.search import Searcher
 from src.tracing import save_trace
 
 
-def evaluate(agent, questions, out, split="dev", fixture=False):
+def evaluate(agent, questions, out, split="dev", fixture=False, allow_draft=False, allow_ai_reviewed=False):
     validate_questions(questions, agent.tools.manifest)
     selected = [q for q in questions if q["split"] == split]
     if not selected:
         raise ValueError("No questions in requested split")
-    if not fixture and any(q["label_status"] != "verified" for q in selected):
+    draft = any(q["label_status"] == "draft" for q in selected)
+    if allow_draft and (split != "dev" or fixture):
+        raise ValueError("Draft runs are exploratory official dev runs only")
+    permitted = {"verified", "ai_reviewed"} if allow_ai_reviewed else {"verified"}
+    if not fixture and not allow_draft and any(q["label_status"] not in permitted for q in selected):
         raise ValueError("Official evaluation requires verified labels")
     identity = {"schema": 1, "config": asdict(agent.config), "prompt_hash": agent.prompt_hash,
+                "retrieval": {"mode": agent.tools.searcher.mode, "rerank": agent.tools.searcher.reranker is not None},
                 "dataset_hash": digest(questions), "corpus_hash": digest(agent.tools.searcher.chunks),
-                "split": split, "fixture": fixture, "git_sha": git_sha(), "source_hash": source_hash(), "python": platform.python_version()}
+                "split": split, "fixture": fixture, "exploratory": draft,
+                "label_status": "draft" if draft else "synthetic" if fixture else "ai_reviewed" if any(q["label_status"] == "ai_reviewed" for q in selected) else "verified",
+                "human_verified": all(q["label_status"] == "verified" for q in selected),
+                "git_sha": git_sha(), "source_hash": source_hash(), "python": platform.python_version()}
     fingerprint = digest(identity)
     partial = Path(str(out) + ".partial.jsonl")
     partial.parent.mkdir(parents=True, exist_ok=True)
@@ -69,10 +77,13 @@ def main():
     p.add_argument("--split", choices=["dev", "test"], default="dev")
     p.add_argument("--out", required=True)
     p.add_argument("--fixture", action="store_true")
+    p.add_argument("--allow-draft", action="store_true")
+    p.add_argument("--allow-ai-reviewed", action="store_true")
     p.add_argument("--defense", type=int, default=5)
+    p.add_argument("--rerank", action="store_true")
     args = p.parse_args()
-    agent = Agent(Searcher(args.index), Config.from_env(fixture=args.fixture, defense=args.defense))
-    evaluate(agent, read_jsonl(args.questions), args.out, args.split, args.fixture)
+    agent = Agent(Searcher(args.index, rerank=args.rerank), Config.from_env(fixture=args.fixture, defense=args.defense))
+    evaluate(agent, read_jsonl(args.questions), args.out, args.split, args.fixture, args.allow_draft, args.allow_ai_reviewed)
 
 
 if __name__ == "__main__":

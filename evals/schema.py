@@ -10,13 +10,16 @@ CATEGORY_COUNTS = {"single_fact": (16, 14), "multi_section": (10, 10), "numeric_
 class Evidence(BaseModel):
     model_config = ConfigDict(extra="forbid")
     doc_id: str
-    pages: list[int] = Field(min_length=1)
+    pages: list[int] = []
+    section_path: str | None = None
     evidence: str = Field(min_length=1)
 
     @model_validator(mode="after")
     def check_evidence(self):
-        if min(self.pages) < 1 or len(self.evidence.split()) > 12:
+        if (self.pages and min(self.pages) < 1) or len(self.evidence.split()) > 12:
             raise ValueError("Evidence requires positive pages and at most 12 words")
+        if not self.pages and not self.section_path:
+            raise ValueError("Evidence requires PDF pages or an explicit HTML section path")
         return self
 
 
@@ -31,7 +34,7 @@ class Question(BaseModel):
     forbidden_facts: list[str] = []
     gold: list[Evidence]
     must_refuse: bool
-    label_status: Literal["synthetic", "draft", "verified"]
+    label_status: Literal["synthetic", "draft", "ai_reviewed", "verified"]
     notes: str = ""
 
     @model_validator(mode="after")
@@ -45,7 +48,7 @@ class Question(BaseModel):
         return self
 
 
-def validate_questions(rows, manifest=None, full=False):
+def validate_questions(rows, manifest=None, full=False, allow_ai_reviewed=False):
     questions = [Question.model_validate(r) for r in rows]
     if len({q.id for q in questions}) != len(questions):
         raise ValueError("Duplicate question IDs")
@@ -58,6 +61,7 @@ def validate_questions(rows, manifest=None, full=False):
         if any(counts[category, split] != count for category, pair in CATEGORY_COUNTS.items()
                for split, count in zip(("dev", "test"), pair)):
             raise ValueError("Question category/split counts differ from the 120-question protocol")
-        if any(q.label_status != "verified" for q in questions):
+        permitted = {"verified", "ai_reviewed"} if allow_ai_reviewed else {"verified"}
+        if any(q.label_status not in permitted for q in questions):
             raise ValueError("Real benchmark labels require human verification")
     return questions

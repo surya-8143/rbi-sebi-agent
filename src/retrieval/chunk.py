@@ -2,22 +2,26 @@
 import re
 
 HEADING = re.compile(r"^(?:chapter|part|annex(?:ure)?|appendix|schedule)\b", re.I)
-NUMBERED = re.compile(r"^(\d+(?:\.\d+){0,3})(?:[.)])?\s+\S")
+NUMBERED = re.compile(r"^(\d{1,3}(?:\.\d{1,3}){0,3})(?:[.)])?\s+\S")
 
 
 def chunk_doc(meta, pages, max_chars=2800, target_chars=1800):
     chunks, section = [], "Preamble"
     for page in pages:
         buf = ""
+        heading_only = False
 
         def emit():
-            nonlocal buf
+            nonlocal buf, heading_only
             if buf.strip():
                 header = f"[{meta['issuer']} | {meta['title'][:160]} | {meta['date_issued']} | {section}]"
+                if meta.get("version_date") and meta["version_date"] != meta["date_issued"]:
+                    header += f" [revision {meta['version_date']}]"
                 chunks.append({**meta, "chunk_id": f"{meta['doc_id']}:{len(chunks):04d}",
                                "page": page["page"], "section_path": section,
                                "body": buf.strip(), "text": header + "\n" + buf.strip()})
             buf = ""
+            heading_only = False
 
         # Reserve enough room for metadata. Even one enormous input line is split.
         limit = max_chars - 300
@@ -28,9 +32,12 @@ def chunk_doc(meta, pages, max_chars=2800, target_chars=1800):
             if not line:
                 continue
             numbered = NUMBERED.match(line)
-            if HEADING.match(line) or numbered:
-                emit()
+            heading = bool(HEADING.match(line))
+            if heading or numbered:
+                if not heading_only:
+                    emit()
                 section = numbered.group(1) if numbered else line[:70]
+            heading_only = heading and (not buf or heading_only)
             while line:
                 room = limit - len(buf) - 1
                 if room < 1:

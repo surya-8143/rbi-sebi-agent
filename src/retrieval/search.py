@@ -8,6 +8,14 @@ from src.io import digest
 from src.retrieval.index import tokenize
 
 
+def available_as_of(chunk):
+    dates = [chunk["date_issued"], chunk.get("version_date") or chunk["date_issued"]]
+    # Unreviewed web snapshots may contain amendments newer than their cover date.
+    if chunk.get("metadata_status") == "draft" and chunk.get("retrieved_at"):
+        dates.append(chunk["retrieved_at"][:10])
+    return max(dates)
+
+
 class Searcher:
     def __init__(self, folder="index", rerank=False, chunks=None):
         self.folder = Path(folder)
@@ -17,7 +25,10 @@ class Searcher:
             raise ValueError("Empty index")
         if self.meta and digest(self.chunks) != self.meta["corpus_hash"]:
             raise ValueError("Index corpus hash mismatch; rebuild the index")
-        self.bm25 = BM25Okapi([tokenize(c["text"]) for c in self.chunks])
+        tokens = [tokenize(c["text"]) for c in self.chunks]
+        if not any(tokens):
+            raise ValueError("Index has no searchable English or numeric tokens")
+        self.bm25 = BM25Okapi(tokens)
         self.emb = self.vector = self.reranker = None
         if self.meta.get("dense"):
             import faiss
@@ -42,7 +53,7 @@ class Searcher:
             raise ValueError("Dense search requested on a sparse index; rebuild with --dense")
         allowed = {i for i, c in enumerate(self.chunks)
                    if (not issuer or c["issuer"].upper() == issuer.upper())
-                   and (not as_of or c["date_issued"] <= as_of)}
+                   and (not as_of or available_as_of(c) <= as_of)}
         if not allowed or k < 1:
             return []
         rankings = []

@@ -2,6 +2,7 @@ import argparse
 import statistics
 import time
 
+from evals.schema import validate_questions
 from evals.score import is_hit
 from src.io import digest, read_jsonl, write_json
 from src.retrieval.search import Searcher
@@ -32,11 +33,23 @@ if __name__ == "__main__":
     p.add_argument("--out", default="results/retrieval.json")
     p.add_argument("--fixture", action="store_true")
     p.add_argument("--rerank", action="store_true")
+    p.add_argument("--allow-draft", action="store_true", help="Exploratory dev measurements; never a verified benchmark")
+    p.add_argument("--allow-ai-reviewed", action="store_true")
     a = p.parse_args()
     searcher = Searcher(a.index)
     qs = [q for q in read_jsonl(a.questions) if q["split"] == "dev"]
+    validate_questions(qs, {c["doc_id"] for c in searcher.chunks})
+    draft = any(q["label_status"] == "draft" for q in qs)
+    if draft and not a.allow_draft:
+        raise ValueError("Unverified labels require explicit --allow-draft")
+    permitted = {"verified", "ai_reviewed"} if a.allow_ai_reviewed else {"verified"}
+    if not a.fixture and not a.allow_draft and any(q["label_status"] not in permitted for q in qs):
+        raise ValueError("Official benchmark requires verified labels")
     modes = ["bm25", "dense", "hybrid"] if searcher.vector is not None else ["bm25"]
     setups = {mode: evaluate(searcher, qs, mode) for mode in modes}
     if a.rerank:
         setups["hybrid_reranked"] = evaluate(Searcher(a.index, rerank=True), qs, "hybrid")
-    write_json(a.out, {"kind": "retrieval", "meta": {"fixture": a.fixture, "split": "dev", "corpus_hash": digest(searcher.chunks)}, "setups": setups})
+    write_json(a.out, {"kind": "retrieval", "meta": {"fixture": a.fixture, "exploratory": draft,
+               "label_status": "draft" if draft else "synthetic" if a.fixture else "ai_reviewed" if any(q["label_status"] == "ai_reviewed" for q in qs) else "verified",
+               "split": "dev", "dataset_hash": digest(qs), "corpus_hash": digest(searcher.chunks)}, "setups": setups})
+    print({name: {k: v for k, v in metrics.items() if k != "rows"} for name, metrics in setups.items()})

@@ -1,0 +1,196 @@
+{
+  "kind": "evaluation",
+  "meta": {
+    "schema": 1,
+    "config": {
+      "model": "rbi-sebi-qwen3:4b",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "timeout": 300.0,
+      "max_steps": 5,
+      "max_tool_calls": 12,
+      "defense": 5,
+      "tau": null,
+      "fixture": false,
+      "redteam": false,
+      "protocol": "native"
+    },
+    "prompt_hash": "89db90513a169808844718205050ade1da1153c8825ce8be5abe57364fcf7889",
+    "dataset_hash": "6904faed8f3ea5533e4be4781bf98ef3b0d6ec9af5931d4bbb91b1f67e19c54d",
+    "corpus_hash": "1a1ea73681194aeb4ad5fc6c9567bfbd7a388ba17a780710c0c276102a1bb9cc",
+    "split": "dev",
+    "fixture": false,
+    "exploratory": true,
+    "label_status": "draft",
+    "human_verified": false,
+    "git_sha": "8c7d90c6c8b7b6db9b20b76e004c790979146771",
+    "source_hash": "b14c3d77912c486c2d749956b12a1c20ce23f95430a0a7013f7056f8e98170ac",
+    "python": "3.11.9",
+    "date": "2026-11-08T14:33:19.450982+00:00",
+    "model": "rbi-sebi-qwen3:4b",
+    "fingerprint": "4f946b3e8f56819bcd04d9e449daad6d1d188cb1a35755d4ebd616db7417bbed",
+    "complete": true
+  },
+  "rows": [
+    {
+      "id": "draft_001",
+      "category": "single_fact",
+      "must_refuse": false,
+      "status": "refused",
+      "reason": "citation_failed",
+      "answered": false,
+      "key_fact_strict": false,
+      "key_fact_partial": 0.0,
+      "citation_valid": false,
+      "citation_support": false,
+      "gold_coverage": 0.0,
+      "refusal_correct": false,
+      "false_refusal": true,
+      "error": false,
+      "seconds": 459.2335970999993,
+      "tokens": 8775,
+      "tool_calls": 1,
+      "fingerprint": "4f946b3e8f56819bcd04d9e449daad6d1d188cb1a35755d4ebd616db7417bbed",
+      "trace_id": "a68eaa998e6f4a498f208899d61df95d"
+    },
+    {
+      "id": "draft_034",
+      "category": "unanswerable",
+      "must_refuse": true,
+      "status": "refused",
+      "reason": "unknown_reference",
+      "answered": false,
+      "key_fact_strict": false,
+      "key_fact_partial": 0.0,
+      "citation_valid": false,
+      "citation_support": false,
+      "gold_coverage": null,
+      "refusal_correct": true,
+      "false_refusal": false,
+      "error": false,
+      "seconds": 0.0007534999895142391,
+      "tokens": 0,
+      "tool_calls": 0,
+      "fingerprint": "4f946b3e8f56819bcd04d9e449daad6d1d188cb1a35755d4ebd616db7417bbed",
+      "trace_id": "086ace070a0c493285169b5efa234f54"
+    },
+    {
+      "id": "draft_037",
+      "category": "out_of_scope",
+      "must_refuse": true,
+      "status": "blocked",
+      "reason": "out_of_scope",
+      "answered": false,
+      "key_fact_strict": false,
+      "key_fact_partial": 0.0,
+      "citation_valid": false,
+      "citation_support": false,
+      "gold_coverage": null,
+      "refusal_correct": true,
+      "false_refusal": false,
+      "error": false,
+      "seconds": 3.3430122999998275,
+      "tokens": 156,
+      "tool_calls": 0,
+      "fingerprint": "4f946b3e8f56819bcd04d9e449daad6d1d188cb1a35755d4ebd616db7417bbed",
+      "trace_id": "0cc9eb68846940ef998a12ea9ff3d7bc"
+    }
+  ],
+  "metrics": {
+    "key_fact_strict": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "citation_valid": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "ci95": [
+        null,
+        null
+      ]
+    },
+    "citation_support": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "refusal_correct": {
+      "k": 2,
+      "n": 2,
+      "rate": 1.0,
+      "ci95": [
+        0.34237195288961925,
+        1.0
+      ]
+    },
+    "false_refusal": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "error": {
+      "k": 0,
+      "n": 3,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.5615060804490177
+      ]
+    }
+  },
+  "per_category": {
+    "out_of_scope": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "single_fact": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "unanswerable": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    }
+  },
+  "key_fact_partial_mean": 0.0,
+  "latency": {
+    "median": 3.3430122999998275,
+    "p95": 459.2335970999993
+  },
+  "tokens": {
+    "median": 156,
+    "p95": 8775
+  },
+  "tool_calls": {
+    "median": 0,
+    "p95": 1
+  }
+}

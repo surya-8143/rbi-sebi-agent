@@ -1,0 +1,1607 @@
+{
+  "dataset_hash": "130c523b08e394c478f477150fe70469af2f502867122c551b726874fe1fa748",
+  "corpus_hash": "1a1ea73681194aeb4ad5fc6c9567bfbd7a388ba17a780710c0c276102a1bb9cc",
+  "human_verified": false,
+  "label_method": "AI authoring and source review; exact quotes checked in software",
+  "rows": [
+    {
+      "id": "ai_dev_single_fact_01",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0086"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_02",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0008"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_03",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0008"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_04",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0024"
+        },
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0024"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_05",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0035"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_06",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0035"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_07",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13154",
+          "sha256": "19f5ea0f1fd641ed527290f9f742263501aab4da2502eddab1040d9ff5e4da4d",
+          "chunk_id": "rbi_md_13154:0023"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_08",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13155",
+          "sha256": "661b0fc36c556d1fed6c521c451aa5969e84053d29a09a98753883f71477b236",
+          "chunk_id": "rbi_md_13155:0015"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_09",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0408"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_10",
+      "sources": [
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0124"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_11",
+      "sources": [
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0301"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_12",
+      "sources": [
+        {
+          "doc_id": "sebi_mc_dt_2024",
+          "sha256": "11a9ea00c6dd8e03c6d3219cc50392a4e705826fac8347dcef0f43ba73667457",
+          "chunk_id": "sebi_mc_dt_2024:0202"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_13",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99569",
+          "sha256": "ab1d6f24e184cc2766052b9c3a0fc28ee237b9c2e02fae8d5129f5dd1970cdce",
+          "chunk_id": "sebi_md_99569:0024"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_14",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99611",
+          "sha256": "1f6763cdb3a30061802e117d5615ec16a2e97d25dfe0c09a3144f449bc1d7ce0",
+          "chunk_id": "sebi_md_99611:0085"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_numeric_date_01",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13155",
+          "sha256": "661b0fc36c556d1fed6c521c451aa5969e84053d29a09a98753883f71477b236",
+          "chunk_id": "rbi_md_13155:0028"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_numeric_date_02",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13155",
+          "sha256": "661b0fc36c556d1fed6c521c451aa5969e84053d29a09a98753883f71477b236",
+          "chunk_id": "rbi_md_13155:0028"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_numeric_date_03",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99569",
+          "sha256": "ab1d6f24e184cc2766052b9c3a0fc28ee237b9c2e02fae8d5129f5dd1970cdce",
+          "chunk_id": "sebi_md_99569:0031"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_numeric_date_04",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0104"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_01",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0008"
+        },
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0009"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_02",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0086"
+        },
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0086"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_03",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0049"
+        },
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0049"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_04",
+      "sources": [
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0306"
+        },
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0306"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_05",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13154",
+          "sha256": "19f5ea0f1fd641ed527290f9f742263501aab4da2502eddab1040d9ff5e4da4d",
+          "chunk_id": "rbi_md_13154:0060"
+        },
+        {
+          "doc_id": "rbi_md_13154",
+          "sha256": "19f5ea0f1fd641ed527290f9f742263501aab4da2502eddab1040d9ff5e4da4d",
+          "chunk_id": "rbi_md_13154:0060"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_06",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0071"
+        },
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0071"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_cross_document_01",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0086"
+        },
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0156"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_cross_document_02",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0008"
+        },
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0301"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_version_conflict_01",
+      "sources": [
+        {
+          "doc_id": "sebi_md_104743",
+          "sha256": "4a8ce13addf1c5f9fb4dba3c7ab3e3a3e82660f2ae2906477b121b60b7e308f9",
+          "chunk_id": "sebi_md_104743:0466"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_version_conflict_02",
+      "sources": [
+        {
+          "doc_id": "sebi_md_96073",
+          "sha256": "825c002c31fc9143482101a4bd555000e7520bc6ef68732ace78e1997e3feff8",
+          "chunk_id": "sebi_md_96073:0451"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_01",
+      "sources": [
+        {
+          "doc_id": "sebi_md_94821",
+          "sha256": "d6ccc7078c571dcbf2760b5c0b1ca623588ee27cf0560ad6b9ed181f1c04471e",
+          "chunk_id": "sebi_md_94821:0002"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_numeric_date_05",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0011"
+        },
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0011"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_unanswerable_01",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_unanswerable_02",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_unanswerable_03",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_unanswerable_04",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_unanswerable_05",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_unanswerable_06",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_out_of_scope_01",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_out_of_scope_02",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_15",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0028"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_single_fact_16",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0018"
+        },
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0018"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_07",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0021"
+        },
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0027"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_08",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13155",
+          "sha256": "661b0fc36c556d1fed6c521c451aa5969e84053d29a09a98753883f71477b236",
+          "chunk_id": "rbi_md_13155:0028"
+        },
+        {
+          "doc_id": "rbi_md_13155",
+          "sha256": "661b0fc36c556d1fed6c521c451aa5969e84053d29a09a98753883f71477b236",
+          "chunk_id": "rbi_md_13155:0015"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_09",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0087"
+        },
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0086"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_multi_section_10",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0008"
+        },
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0011"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_numeric_date_06",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13443",
+          "sha256": "d2a0d9666ac1c8ba2b7b689849cc935bb4fc579281ce9e73779ee8176a845423",
+          "chunk_id": "rbi_md_13443:0038"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_numeric_date_07",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0033"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_numeric_date_08",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0047"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_cross_document_03",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13154",
+          "sha256": "19f5ea0f1fd641ed527290f9f742263501aab4da2502eddab1040d9ff5e4da4d",
+          "chunk_id": "rbi_md_13154:0060"
+        },
+        {
+          "doc_id": "rbi_md_13155",
+          "sha256": "661b0fc36c556d1fed6c521c451aa5969e84053d29a09a98753883f71477b236",
+          "chunk_id": "rbi_md_13155:0028"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_cross_document_04",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0011"
+        },
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0306"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_cross_document_05",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0071"
+        },
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0321"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_dev_cross_document_06",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0024"
+        },
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0322"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_01",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0040"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_02",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0092"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_03",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0009"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_04",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0019"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_05",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0083"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_06",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0049"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_07",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13154",
+          "sha256": "19f5ea0f1fd641ed527290f9f742263501aab4da2502eddab1040d9ff5e4da4d",
+          "chunk_id": "rbi_md_13154:0024"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_08",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13154",
+          "sha256": "19f5ea0f1fd641ed527290f9f742263501aab4da2502eddab1040d9ff5e4da4d",
+          "chunk_id": "rbi_md_13154:0025"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_09",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13155",
+          "sha256": "661b0fc36c556d1fed6c521c451aa5969e84053d29a09a98753883f71477b236",
+          "chunk_id": "rbi_md_13155:0017"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_10",
+      "sources": [
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0108"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_11",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0072"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_12",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0030"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_13",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0040"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_single_fact_14",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0012"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_01",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0033"
+        },
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0034"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_02",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0043"
+        },
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0040"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_03",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0056"
+        },
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0079"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_04",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0071"
+        },
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0071"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_05",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0011"
+        },
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0011"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_06",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0019"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_07",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0035"
+        },
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0035"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_08",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0101"
+        },
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0101"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_09",
+      "sources": [
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0321"
+        },
+        {
+          "doc_id": "sebi_md_95219",
+          "sha256": "09a6ba33f5f2b5da02f18c80e653a3c8ce4361728b7f604c34ab584ba691b0ae",
+          "chunk_id": "sebi_md_95219:0323"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_multi_section_10",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13443",
+          "sha256": "d2a0d9666ac1c8ba2b7b689849cc935bb4fc579281ce9e73779ee8176a845423",
+          "chunk_id": "rbi_md_13443:0038"
+        },
+        {
+          "doc_id": "rbi_md_13443",
+          "sha256": "d2a0d9666ac1c8ba2b7b689849cc935bb4fc579281ce9e73779ee8176a845423",
+          "chunk_id": "rbi_md_13443:0038"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_numeric_date_01",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13155",
+          "sha256": "661b0fc36c556d1fed6c521c451aa5969e84053d29a09a98753883f71477b236",
+          "chunk_id": "rbi_md_13155:0028"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_numeric_date_02",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13154",
+          "sha256": "19f5ea0f1fd641ed527290f9f742263501aab4da2502eddab1040d9ff5e4da4d",
+          "chunk_id": "rbi_md_13154:0060"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_numeric_date_03",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0011"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_numeric_date_04",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0079"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_numeric_date_05",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0090"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_numeric_date_06",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0011"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_numeric_date_07",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0079"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_cross_document_01",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0019"
+        },
+        {
+          "doc_id": "rbi_md_13274",
+          "sha256": "b620059e90635b2da2294e2cd07236466cd2bcd9e47a11ef3ca435ae99af0790",
+          "chunk_id": "rbi_md_13274:0018"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_cross_document_02",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0086"
+        },
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0071"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_cross_document_03",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13443",
+          "sha256": "d2a0d9666ac1c8ba2b7b689849cc935bb4fc579281ce9e73779ee8176a845423",
+          "chunk_id": "rbi_md_13443:0038"
+        },
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0056"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_cross_document_04",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99569",
+          "sha256": "ab1d6f24e184cc2766052b9c3a0fc28ee237b9c2e02fae8d5129f5dd1970cdce",
+          "chunk_id": "sebi_md_99569:0031"
+        },
+        {
+          "doc_id": "sebi_md_99571",
+          "sha256": "a5f6855f6c036b7f29ea82db4bcdc62fbf35c17fd79a65fd3bbfc52d9c2a2742",
+          "chunk_id": "sebi_md_99571:0393"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_02",
+      "sources": [
+        {
+          "doc_id": "sebi_md_102815",
+          "sha256": "e4f871e2fc41635e013639cd621526ecc87576d9ea188717eb014720790a36d3",
+          "chunk_id": "sebi_md_102815:0000"
+        },
+        {
+          "doc_id": "sebi_md_102815",
+          "sha256": "e4f871e2fc41635e013639cd621526ecc87576d9ea188717eb014720790a36d3",
+          "chunk_id": "sebi_md_102815:0000"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_03",
+      "sources": [
+        {
+          "doc_id": "sebi_md_101473",
+          "sha256": "8191b73c0ce55022990dbc10f929caa40a078a827b4865d8acffbef589bc44fb",
+          "chunk_id": "sebi_md_101473:0000"
+        },
+        {
+          "doc_id": "sebi_md_101473",
+          "sha256": "8191b73c0ce55022990dbc10f929caa40a078a827b4865d8acffbef589bc44fb",
+          "chunk_id": "sebi_md_101473:0000"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_04",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99611",
+          "sha256": "1f6763cdb3a30061802e117d5615ec16a2e97d25dfe0c09a3144f449bc1d7ce0",
+          "chunk_id": "sebi_md_99611:0000"
+        },
+        {
+          "doc_id": "sebi_md_99611",
+          "sha256": "1f6763cdb3a30061802e117d5615ec16a2e97d25dfe0c09a3144f449bc1d7ce0",
+          "chunk_id": "sebi_md_99611:0000"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_05",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0037"
+        },
+        {
+          "doc_id": "rbi_md_13271",
+          "sha256": "bf00bd57b6ffcf7e2093efebcd2c912ac9cea9d0282a0477bca5ddc917633293",
+          "chunk_id": "rbi_md_13271:0037"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_06",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13272",
+          "sha256": "78c78d70abb7b3c3d724ca8064eee936529e42083894ce4641a58918f23c64fb",
+          "chunk_id": "rbi_md_13272:0037"
+        },
+        {
+          "doc_id": "rbi_md_13272",
+          "sha256": "78c78d70abb7b3c3d724ca8064eee936529e42083894ce4641a58918f23c64fb",
+          "chunk_id": "rbi_md_13272:0037"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_07",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13274",
+          "sha256": "b620059e90635b2da2294e2cd07236466cd2bcd9e47a11ef3ca435ae99af0790",
+          "chunk_id": "rbi_md_13274:0036"
+        },
+        {
+          "doc_id": "rbi_md_13274",
+          "sha256": "b620059e90635b2da2294e2cd07236466cd2bcd9e47a11ef3ca435ae99af0790",
+          "chunk_id": "rbi_md_13274:0036"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_08",
+      "sources": [
+        {
+          "doc_id": "sebi_md_104743",
+          "sha256": "4a8ce13addf1c5f9fb4dba3c7ab3e3a3e82660f2ae2906477b121b60b7e308f9",
+          "chunk_id": "sebi_md_104743:0004"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_09",
+      "sources": [
+        {
+          "doc_id": "sebi_md_104743",
+          "sha256": "4a8ce13addf1c5f9fb4dba3c7ab3e3a3e82660f2ae2906477b121b60b7e308f9",
+          "chunk_id": "sebi_md_104743:0004"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_10",
+      "sources": [
+        {
+          "doc_id": "sebi_md_94840",
+          "sha256": "f5912ee8490e8ff5d7a709fb9e29077d5054da1a6d8d98252f897a99e40fa318",
+          "chunk_id": "sebi_md_94840:0002"
+        },
+        {
+          "doc_id": "sebi_md_94840",
+          "sha256": "f5912ee8490e8ff5d7a709fb9e29077d5054da1a6d8d98252f897a99e40fa318",
+          "chunk_id": "sebi_md_94840:0003"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_11",
+      "sources": [
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0065"
+        },
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0034"
+        },
+        {
+          "doc_id": "sebi_md_99166",
+          "sha256": "c74df98e946110cf3e822b7c244fe7e06a99de9991850c7d6628a37b52babeda",
+          "chunk_id": "sebi_md_99166:0030"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_12",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13157",
+          "sha256": "b2f871bac2f7c0053ac622cc1dc3775eb0f0458e81377c5ad79f825b139072d0",
+          "chunk_id": "rbi_md_13157:0039"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_version_conflict_13",
+      "sources": [
+        {
+          "doc_id": "rbi_md_13141",
+          "sha256": "691b816badace5cba9b8b8d60fde2bbbbdffe524358a3c519e9da907a0b27c7a",
+          "chunk_id": "rbi_md_13141:0000"
+        }
+      ],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_01",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_02",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_03",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_04",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_05",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_06",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_07",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_08",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_09",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_10",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_11",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_12",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_13",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_unanswerable_14",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_out_of_scope_01",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_out_of_scope_02",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_out_of_scope_03",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_out_of_scope_04",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_out_of_scope_05",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_out_of_scope_06",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_out_of_scope_07",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    },
+    {
+      "id": "ai_test_out_of_scope_08",
+      "sources": [],
+      "quote_check": "exact normalized substring",
+      "reviewer": "AI assistant",
+      "human_verified": false
+    }
+  ],
+  "visual_checks": [
+    {
+      "doc_id": "sebi_md_99571",
+      "page": 89,
+      "method": "Poppler rendering inspected by AI",
+      "finding": "Individual RA application fee is Rs 2,000; table column alignment confirmed"
+    }
+  ],
+  "limitations": [
+    "No independent annotator",
+    "Related provisions recur across splits; questions are not independent samples",
+    "Version families and repetitive legal language can inflate scores",
+    "Key-fact scoring is not a legal correctness judgment"
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "accepted": 65,
+  "excluded": [
+    {
+      "doc_id": "rbi_md_13140",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13140",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13156",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13156",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13159",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13159",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13160",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13160",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13162",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13162",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13166",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13166",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "sebi_md_101817",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/nov-2026/master-circular-for-alternative-investment-funds-aifs-_101817.html",
+      "reason": "Outside page range: 156"
+    },
+    {
+      "doc_id": "sebi_md_100491",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/mar-2026/master-circular-for-mutual-funds_100491.html",
+      "reason": "Outside page range: 748"
+    },
+    {
+      "doc_id": "sebi_md_99567",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/feb-2026/master-circular-for-registrars-to-an-issue-and-share-transfer-agents_99567.html",
+      "reason": "Outside page range: 294"
+    },
+    {
+      "doc_id": "sebi_md_99432",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jan-2026/master-circular-for-compliance-with-the-provisions-of-the-securities-and-exchange-board-of-india-listing-obligations-and-disclosure-requirements-regulations-2015-by-listed-entities_99432.html",
+      "reason": "Outside page range: 291"
+    },
+    {
+      "doc_id": "sebi_md_97343",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/oct-2025/master-circular-for-issue-and-listing-of-non-convertible-securities-securitised-debt-instruments-security-receipts-municipal-debt-securities-and-commercial-paper_97343.html",
+      "reason": "Outside page range: 215"
+    },
+    {
+      "doc_id": "sebi_md_95347",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jul-2025/master-circular-for-portfolio-managers_95347.html",
+      "reason": "Outside page range: 207"
+    },
+    {
+      "doc_id": "sebi_md_95233",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jul-2025/master-circular-for-infrastructure-investment-trusts-invits-_95233.html",
+      "reason": "Failed to open stream"
+    },
+    {
+      "doc_id": "sebi_md_95232",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jul-2025/master-circular-for-real-estate-investment-trusts-reits-_95232.html",
+      "reason": "Outside page range: 216"
+    },
+    {
+      "doc_id": "sebi_md_94735",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jun-2025/master-circular-for-registrars-to-an-issue-and-share-transfer-agents_94735.html",
+      "reason": "Outside page range: 231"
+    },
+    {
+      "doc_id": "sebi_md_94623",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jun-2025/master-circular-for-stock-brokers_94623.html",
+      "reason": "Outside page range: 399"
+    },
+    {
+      "doc_id": "sebi_md_90353",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/dec-2024/master-circular-for-stock-exchanges-and-clearing-corporations_90353.html",
+      "reason": "Outside page range: 4"
+    },
+    {
+      "doc_id": "sebi_md_89245",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/dec-2024/master-circular-for-depositories_89245.html",
+      "reason": "Outside page range: 309"
+    }
+  ],
+  "formats": {
+    "pdf": 16,
+    "html": 49
+  },
+  "html_failures": [
+    {
+      "doc_id": "rbi_md_13140",
+      "reason": "Official HTML body missing or incomplete"
+    },
+    {
+      "doc_id": "rbi_md_13156",
+      "reason": "Official HTML body missing or incomplete"
+    },
+    {
+      "doc_id": "rbi_md_13159",
+      "reason": "Official HTML body missing or incomplete"
+    },
+    {
+      "doc_id": "rbi_md_13160",
+      "reason": "Official HTML body missing or incomplete"
+    },
+    {
+      "doc_id": "rbi_md_13162",
+      "reason": "Official HTML body missing or incomplete"
+    },
+    {
+      "doc_id": "rbi_md_13166",
+      "reason": "Official HTML body missing or incomplete"
+    }
+  ],
+  "pdf_attempt_failures": [
+    {
+      "doc_id": "rbi_md_13443",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13443",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13442",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13442",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13271",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13271",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13272",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13272",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13273",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13273",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13274",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13274",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13275",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13275",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13276",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13276",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_12586",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12586",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13729",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13729",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13705",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13705",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13400",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13400",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13319",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13319",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13136",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13136",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13137",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13137",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13138",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13138",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13139",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13139",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13140",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13140",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13141",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13141",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13143",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13143",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13144",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13144",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13145",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13145",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13146",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13146",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13147",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13147",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13148",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13148",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13149",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13149",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13150",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13150",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13151",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13151",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13152",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13152",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13153",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13153",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13154",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13154",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13155",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13155",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13156",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13156",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13157",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13157",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13158",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13158",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13159",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13159",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13160",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13160",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13161",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13161",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13162",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13162",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13163",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13163",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13164",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13164",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13165",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13165",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13166",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13166",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13167",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13167",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13168",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13168",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13637",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13637",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13638",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13638",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13639",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13639",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13640",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13640",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13641",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13641",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13642",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13642",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13643",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13643",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13644",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13644",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13645",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13645",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "rbi_md_13522",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13522",
+      "reason": "Response is not a PDF"
+    },
+    {
+      "doc_id": "sebi_md_101817",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/nov-2026/master-circular-for-alternative-investment-funds-aifs-_101817.html",
+      "reason": "Outside page range: 156"
+    },
+    {
+      "doc_id": "sebi_md_100491",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/mar-2026/master-circular-for-mutual-funds_100491.html",
+      "reason": "Outside page range: 748"
+    },
+    {
+      "doc_id": "sebi_md_99567",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/feb-2026/master-circular-for-registrars-to-an-issue-and-share-transfer-agents_99567.html",
+      "reason": "Outside page range: 294"
+    },
+    {
+      "doc_id": "sebi_md_99432",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jan-2026/master-circular-for-compliance-with-the-provisions-of-the-securities-and-exchange-board-of-india-listing-obligations-and-disclosure-requirements-regulations-2015-by-listed-entities_99432.html",
+      "reason": "Outside page range: 291"
+    },
+    {
+      "doc_id": "sebi_md_97343",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/oct-2025/master-circular-for-issue-and-listing-of-non-convertible-securities-securitised-debt-instruments-security-receipts-municipal-debt-securities-and-commercial-paper_97343.html",
+      "reason": "Outside page range: 215"
+    },
+    {
+      "doc_id": "sebi_md_95347",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jul-2025/master-circular-for-portfolio-managers_95347.html",
+      "reason": "Outside page range: 207"
+    },
+    {
+      "doc_id": "sebi_md_95233",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jul-2025/master-circular-for-infrastructure-investment-trusts-invits-_95233.html",
+      "reason": "Failed to open stream"
+    },
+    {
+      "doc_id": "sebi_md_95232",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jul-2025/master-circular-for-real-estate-investment-trusts-reits-_95232.html",
+      "reason": "Outside page range: 216"
+    },
+    {
+      "doc_id": "sebi_md_94735",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jun-2025/master-circular-for-registrars-to-an-issue-and-share-transfer-agents_94735.html",
+      "reason": "Outside page range: 231"
+    },
+    {
+      "doc_id": "sebi_md_94623",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/jun-2025/master-circular-for-stock-brokers_94623.html",
+      "reason": "Outside page range: 399"
+    },
+    {
+      "doc_id": "sebi_md_90353",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/dec-2024/master-circular-for-stock-exchanges-and-clearing-corporations_90353.html",
+      "reason": "Outside page range: 4"
+    },
+    {
+      "doc_id": "sebi_md_89245",
+      "source_url": "https://www.sebi.gov.in/legal/master-circulars/dec-2024/master-circular-for-depositories_89245.html",
+      "reason": "Outside page range: 309"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": "ai-eval-v1",
+  "frozen_at": "2026-11-09T01:41:30.336396+00:00",
+  "dataset_hash": "130c523b08e394c478f477150fe70469af2f502867122c551b726874fe1fa748",
+  "dev_hash": "0190f3352b52a92803d83c6894c96fa2d7e8db6a9e06efae63d185adc32edb0d",
+  "test_hash": "73b52eaa7b97e5b6f42aabfcdfc17aac1c2cf3f18d041734872cab7457209a0a",
+  "source_hash": "20fd0491a762f7a88aa2b2a79678916e45f10dca1e12828d6d6118b97ff5a64b",
+  "git_sha": "8c7d90c6c8b7b6db9b20b76e004c790979146771",
+  "model": "rbi-sebi-qwen3:4b",
+  "label_status": "ai_reviewed",
+  "human_verified": false,
+  "protocol": {
+    "baseline": "D0, BM25",
+    "final": "D5, hybrid retrieval with reranker",
+    "test_access": "No tuning on test outcomes; publish failures and all categories",
+    "redteam": "40 attacks at each of D0-D5; synthetic poisoned corpus",
+    "benign_cost": "Same 20 dev cases at each defense with BM25 held fixed",
+    "hardware": "Local CPU; no Colab/GPU latency claim",
+    "threshold": "Disabled: no reliable applicability or answerability inference from retrieval score alone",
+    "judge": "LLM judge skipped; no independent human labels or kappa claimed"
+  }
+}

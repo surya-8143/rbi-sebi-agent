@@ -5,9 +5,10 @@ from src.io import ROOT
 
 
 def main():
-    folders = ("src", "evals", "redteam", "scripts", "tests", "docs", "prompts", "notebooks", ".github")
+    folders = ("src", "evals", "redteam", "scripts", "tests", "docs", "prompts", "notebooks", "models", ".github")
     filenames = ("README.md", "LICENSE", "pyproject.toml", "requirements.txt", "requirements-ci.txt",
-                 "requirements-retrieval.txt", "requirements-lock.txt", ".gitignore", ".env.example", "data/manifest.csv")
+                 "requirements-retrieval.txt", "requirements-lock.txt", ".gitignore", ".env.example", "data/manifest.csv",
+                 "data/source_catalog.csv", "data/collection_report.json", "data/relationships.json")
     output = ROOT / "dist/rbi-sebi-agent.zip"
     output.parent.mkdir(exist_ok=True)
     paths = [ROOT / name for name in filenames]

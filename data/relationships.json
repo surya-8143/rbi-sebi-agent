@@ -1,0 +1,61 @@
+{
+  "status": "machine_reviewed_draft",
+  "note": "Explicit source relationships only; not a legal applicability graph. Human review outstanding.",
+  "relationships": [
+    {
+      "newer": "sebi_md_104743",
+      "older": "sebi_md_96073",
+      "relation": "supersedes",
+      "evidence_document": "sebi_md_104743",
+      "page": 126,
+      "locator": "Annexure 1, row 1"
+    },
+    {
+      "newer": "sebi_md_96073",
+      "older": "sebi_mc_dt_2024",
+      "relation": "supersedes",
+      "evidence_document": "sebi_md_96073",
+      "page": 122,
+      "locator": "Annex-1, row 1"
+    },
+    {
+      "newer": "sebi_md_94821",
+      "older": "sebi_mc_ia_2024",
+      "relation": "supersedes",
+      "evidence_document": "sebi_md_94821",
+      "page": 1,
+      "locator": "Opening paragraphs"
+    },
+    {
+      "newer": "rbi_md_13271",
+      "older": "rbi_md_12586",
+      "relation": "repeals_with_saving_clause",
+      "evidence_document": "rbi_md_13271",
+      "page": null,
+      "locator": "Section 17"
+    },
+    {
+      "newer": "rbi_md_13272",
+      "older": "rbi_md_12586",
+      "relation": "repeals_with_saving_clause",
+      "evidence_document": "rbi_md_13272",
+      "page": null,
+      "locator": "Section 17"
+    },
+    {
+      "newer": "rbi_md_13274",
+      "older": "rbi_md_12586",
+      "relation": "repeals_with_saving_clause",
+      "evidence_document": "rbi_md_13274",
+      "page": null,
+      "locator": "Section 17"
+    }
+  ],
+  "unresolved": [
+    {
+      "document": "sebi_md_94840",
+      "page": 1,
+      "issue": "Opening text references a May 21, 2024 RA circular but the supersession sentence says May 21, 2025. No relationship inferred from this inconsistent date."
+    }
+  ]
+}

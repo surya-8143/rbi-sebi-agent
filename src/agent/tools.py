@@ -90,7 +90,7 @@ class ToolSet:
     def __init__(self, searcher, defense=5):
         self.searcher, self.defense = searcher, defense
         self.manifest = {c["doc_id"]: {k: c.get(k, "") for k in
-                         ("doc_id", "title", "issuer", "date_issued", "reference_no", "source_url")}
+                         ("doc_id", "title", "issuer", "date_issued", "version_date", "source_format", "reference_no", "source_url")}
                          for c in searcher.chunks}
 
     def _passages(self, chunks):
@@ -101,11 +101,14 @@ class ToolSet:
             if self.defense >= 3:
                 text, removed = quarantine(text)
             item = {**{k: chunk[k] for k in ("chunk_id", "doc_id", "title", "issuer", "date_issued", "page", "section_path")},
-                    "score": score, "quarantined_sentences": removed}
+                    "score": score, "quarantined_sentences": removed,
+                    "version_date": chunk.get("version_date", chunk["date_issued"]), "source_format": chunk.get("source_format", "pdf")}
             room = 5800 - len(json.dumps(output)) - len(json.dumps(item))
             if room < 100:
                 break
             item["text"] = text[:room]
+            while item["text"] and len(json.dumps(output + [item])) > 6000:
+                item["text"] = item["text"][:len(item["text"]) // 2]
             output.append(item)
         return output
 
@@ -126,9 +129,14 @@ class ToolSet:
                         (c["section_path"] == args.section or c["section_path"].startswith(args.section + "."))]
                 result = self._passages([(c, None) for c in hits[:4]])
             else:
-                result = [m for m in self.manifest.values() if
+                candidates = [m for m in self.manifest.values() if
                           (not args.issuer or m["issuer"] == args.issuer) and
                           (not args.keyword or args.keyword.lower() in m["title"].lower())][:20]
+                result = []
+                for item in candidates:
+                    if len(json.dumps(result + [item])) > 6000:
+                        break
+                    result.append(item)
         except (ValidationError, ValueError, TypeError, KeyError, json.JSONDecodeError):
             result = {"error": "Unknown tool, document, or invalid arguments"}
         return result, time.perf_counter() - started

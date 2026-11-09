@@ -20,7 +20,8 @@ def key_facts_ok(answer, facts, forbidden=()):
 
 
 def is_hit(chunk, gold):
-    return chunk["doc_id"] == gold["doc_id"] and chunk["page"] in gold["pages"] and norm(gold["evidence"]) in norm(chunk["text"])
+    locator = chunk["page"] in gold["pages"] if gold["pages"] else chunk["page"] is None and chunk["section_path"] == gold.get("section_path")
+    return chunk["doc_id"] == gold["doc_id"] and locator and norm(gold["evidence"]) in norm(chunk["text"])
 
 
 def wilson(k, n, z=1.96):
@@ -54,7 +55,8 @@ def score_question(question, state):
             "refusal_correct": question["must_refuse"] and refused,
             "false_refusal": not question["must_refuse"] and refused,
             "error": state["status"] == "error", "seconds": state.get("seconds", 0),
-            "tokens": state.get("tokens", 0), "tool_calls": state.get("tool_calls", 0)}
+            "tokens": state.get("tokens", 0), "tool_calls": state.get("tool_calls", 0),
+            "citation_format_repairs": state.get("citation_format_repairs", 0)}
 
 
 def aggregate(rows):

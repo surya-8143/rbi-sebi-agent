@@ -60,3 +60,16 @@ def test_resume_and_changed_config_rejected(tmp_path, agent_factory, monkeypatch
 def test_kappa():
     assert cohen_kappa([1, 0, 1, 0], [1, 0, 1, 0])["kappa"] == 1
     assert cohen_kappa([1, 1], [1, 1])["kappa"] is None
+
+
+def test_ai_benchmark_explicit_label_tier_and_reference_consistency():
+    rows = read_jsonl(ROOT / "evals/questions.jsonl")
+    if not rows:
+        pytest.skip("AI-reviewed corpus benchmark not built")
+    validate_questions(rows, full=True, allow_ai_reviewed=True)
+    with pytest.raises(ValueError, match="human"):
+        validate_questions(rows, full=True)
+    for q in rows:
+        assert q["label_status"] == "ai_reviewed"
+        if not q["must_refuse"]:
+            assert key_facts_ok(q["gold_answer"], q["key_facts"], q["forbidden_facts"])[0], q["id"]
